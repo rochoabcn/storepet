@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PetTech</title>
-  <link rel="stylesheet" href="css/estilos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Bonita con Marco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .marco {
+      background-color: #ffffff;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .titulo {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+    }
+
+    .contenido {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .boton {
+      align-self: center;
+      background-color: #0077ff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton:hover {
+      background-color: #005ed3;
+    }
+
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">🐾 <span>PetTech</span></div>
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#"><span class="cart">🛒</span></a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Smart Technology for Your Pet</h1>
-      <p>Discover innovative gadgets to enhance your pet's life</p>
-      <a href="#" class="btn">Shop Now</a>
+  <div class="marco">
+    <div class="titulo">Bienvenido a Mi Página</div>
+    <div class="contenido">
+      Este es un ejemplo de cómo puedes estructurar tu contenido dentro de un marco visual atractivo y limpio. Puedes colocar aquí tus textos, formularios, botones, imágenes o cualquier otro contenido que desees presentar.
     </div>
-    <div class="hero-image">
-      <img src="img/hero-dog.jpg" alt="Dog with feeder" />
-    </div>
-  </section>
-
-  <section class="products">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="img/feeder.jpg" alt="Automatic Pet Feeder" />
-        <p>Automatic Pet Feeder</p>
-      </div>
-      <div class="product-card">
-        <img src="img/camera.jpg" alt="Pet Camera" />
-        <p>Pet Camera</p>
-      </div>
-      <div class="product-card">
-        <img src="img/gps.jpg" alt="GPS Pet Tracker" />
-        <p>GPS Pet Tracker</p>
-      </div>
-    </div>
-  </section>
+    <button class="boton">Empezar</button>
+  </div>
 </body>
 </html>
